@@ -36,8 +36,8 @@ import org.adempiere.webui.component.ListItem;
 import org.adempiere.webui.component.Listbox;
 import org.adempiere.webui.component.Panel;
 import org.adempiere.webui.component.SimpleListModel;
-import org.adempiere.webui.panel.ADTabPanel.EmbeddedPanel;
-import org.adempiere.webui.panel.ADTabPanel.HorizontalEmbeddedPanel;
+import org.adempiere.webui.panel.ADTabpanel.EmbeddedPanel;
+//import org.adempiere.webui.panel.ADTabpanel.HorizontalEmbeddedPanel;
 import org.adempiere.webui.window.FDialog;
 import org.compiere.model.GridTab;
 import org.compiere.model.MColumn;
@@ -972,29 +972,30 @@ public class ADSortTab extends Panel implements IADTabpanel
 		this.setHeight("98%");
     }
 
-	@Override
+	//@Override
 	public Grid getGrid() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+	//@Override
 	public List<EmbeddedPanel> getIncludedPanel() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public List<HorizontalEmbeddedPanel> getHorizontalIncludedPanel() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
+	/*
+	 * public List<HorizontalEmbeddedPanel> getHorizontalIncludedPanel() { // TODO
+	 * Auto-generated method stub return null; }
+	 */
+	
+	//@Override
 	public int getWindowNo() {
 		// TODO Auto-generated method stub
 		return m_WindowNo;
 	}
 
-	@Override
+	//@Override
 	public GridPanel getListPanel() {
 		// TODO Auto-generated method stub
 		return null;
