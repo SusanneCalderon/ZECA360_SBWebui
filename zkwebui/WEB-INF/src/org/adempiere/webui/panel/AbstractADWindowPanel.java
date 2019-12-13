@@ -2123,7 +2123,8 @@ public abstract class AbstractADWindowPanel extends AbstractUIPart implements To
 		{
 			String title = wButton.getDescription();
 			if (title == null || title.length() == 0)
-				title = wButton.getDisplay();
+				title = wButton.getDisplay();  // Es gibt NPE wenn es keinen Titel gibt!!!
+											   // Deswegen: in Spaltendefinition des Buttons, Feld "Description" den Titel eingeben!!! 
 			ProcessInfo pi = new ProcessInfo (title, wButton.getProcess_ID(), table_ID, record_ID);
 			pi.setAD_User_ID (Env.getAD_User_ID(ctx));
 			int p_windoNo = curTab.getWindowNo();
